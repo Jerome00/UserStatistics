@@ -15,6 +15,10 @@
 		280BF0231EA7B07700450919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280BF0211EA7B07700450919 /* LaunchScreen.storyboard */; };
 		280BF02E1EA7B07700450919 /* UserStatisticsWithRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280BF02D1EA7B07700450919 /* UserStatisticsWithRuntimeTests.m */; };
 		280BF0391EA7B07700450919 /* UserStatisticsWithRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280BF0381EA7B07700450919 /* UserStatisticsWithRuntimeUITests.m */; };
+		280BF0961EA7D1A200450919 /* UIControl+UserStastistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 280BF0951EA7D1A200450919 /* UIControl+UserStastistics.m */; };
+		280BF0991EA7D1C400450919 /* UIViewController+UserStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 280BF0981EA7D1C400450919 /* UIViewController+UserStatistics.m */; };
+		280BF09C1EA7D27A00450919 /* JJSwizzleUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 280BF09B1EA7D27A00450919 /* JJSwizzleUtility.m */; };
+		280BF09E1EA7D42E00450919 /* statistics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 280BF09D1EA7D42E00450919 /* statistics.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		280BF0341EA7B07700450919 /* UserStatisticsWithRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserStatisticsWithRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		280BF0381EA7B07700450919 /* UserStatisticsWithRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserStatisticsWithRuntimeUITests.m; sourceTree = "<group>"; };
 		280BF03A1EA7B07700450919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280BF0941EA7D1A200450919 /* UIControl+UserStastistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+UserStastistics.h"; sourceTree = "<group>"; };
+		280BF0951EA7D1A200450919 /* UIControl+UserStastistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+UserStastistics.m"; sourceTree = "<group>"; };
+		280BF0971EA7D1C400450919 /* UIViewController+UserStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UserStatistics.h"; sourceTree = "<group>"; };
+		280BF0981EA7D1C400450919 /* UIViewController+UserStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UserStatistics.m"; sourceTree = "<group>"; };
+		280BF09A1EA7D27A00450919 /* JJSwizzleUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSwizzleUtility.h; sourceTree = "<group>"; };
+		280BF09B1EA7D27A00450919 /* JJSwizzleUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSwizzleUtility.m; sourceTree = "<group>"; };
+		280BF09D1EA7D42E00450919 /* statistics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statistics.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +112,12 @@
 		280BF0121EA7B07700450919 /* UserStatisticsWithRuntime */ = {
 			isa = PBXGroup;
 			children = (
+				280BF0901EA7D15600450919 /* UserStatistics */,
 				280BF0161EA7B07700450919 /* AppDelegate.h */,
 				280BF0171EA7B07700450919 /* AppDelegate.m */,
 				280BF0191EA7B07700450919 /* ViewController.h */,
 				280BF01A1EA7B07700450919 /* ViewController.m */,
+				280BF09D1EA7D42E00450919 /* statistics.plist */,
 				280BF01C1EA7B07700450919 /* Main.storyboard */,
 				280BF01F1EA7B07700450919 /* Assets.xcassets */,
 				280BF0211EA7B07700450919 /* LaunchScreen.storyboard */,
@@ -138,6 +151,19 @@
 				280BF03A1EA7B07700450919 /* Info.plist */,
 			);
 			path = UserStatisticsWithRuntimeUITests;
+			sourceTree = "<group>";
+		};
+		280BF0901EA7D15600450919 /* UserStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				280BF0941EA7D1A200450919 /* UIControl+UserStastistics.h */,
+				280BF0951EA7D1A200450919 /* UIControl+UserStastistics.m */,
+				280BF0971EA7D1C400450919 /* UIViewController+UserStatistics.h */,
+				280BF0981EA7D1C400450919 /* UIViewController+UserStatistics.m */,
+				280BF09A1EA7D27A00450919 /* JJSwizzleUtility.h */,
+				280BF09B1EA7D27A00450919 /* JJSwizzleUtility.m */,
+			);
+			path = UserStatistics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				280BF0231EA7B07700450919 /* LaunchScreen.storyboard in Resources */,
+				280BF09E1EA7D42E00450919 /* statistics.plist in Resources */,
 				280BF0201EA7B07700450919 /* Assets.xcassets in Resources */,
 				280BF01E1EA7B07700450919 /* Main.storyboard in Resources */,
 			);
@@ -274,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				280BF01B1EA7B07700450919 /* ViewController.m in Sources */,
+				280BF0961EA7D1A200450919 /* UIControl+UserStastistics.m in Sources */,
 				280BF0181EA7B07700450919 /* AppDelegate.m in Sources */,
+				280BF09C1EA7D27A00450919 /* JJSwizzleUtility.m in Sources */,
+				280BF0991EA7D1C400450919 /* UIViewController+UserStatistics.m in Sources */,
 				280BF0151EA7B07700450919 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +539,7 @@
 				280BF03F1EA7B07700450919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		280BF0401EA7B07700450919 /* Build configuration list for PBXNativeTarget "UserStatisticsWithRuntimeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +548,7 @@
 				280BF0421EA7B07700450919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		280BF0431EA7B07700450919 /* Build configuration list for PBXNativeTarget "UserStatisticsWithRuntimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +557,7 @@
 				280BF0451EA7B07700450919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
