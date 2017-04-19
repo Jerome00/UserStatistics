@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ViewController</key>
+	<dict>
+		<key>ControlEvent</key>
+		<dict>
+			<key>click</key>
+			<string>clickID</string>
+		</dict>
+		<key>PageEvent</key>
+		<dict>
+			<key>Leave</key>
+			<string>LeaveID</string>
+			<key>Enter</key>
+			<string>EnterID</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
